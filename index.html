@@ -1,68 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Roi Supperi's Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Roi Supperi's Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: white;
+        text-align: center;
+    }
 
-        header {
-            background-color: #111;
-            color: white;
-            padding: 40px 20px;
-        }
+    header {
+        padding: 100px 20px 60px 20px;
+    }
 
+    h1 {
+        font-size: 70px;
+        margin: 0;
+        font-weight: bold;
+        text-shadow: 
+            0 0 10px rgba(255,255,255,0.8),
+            0 0 20px rgba(255,255,255,0.6),
+            0 0 40px rgba(255,255,255,0.4);
+    }
+
+    .divider {
+        margin: 40px auto;
+        width: 200px;
+        position: relative;
+        height: 20px;
+    }
+
+    .divider::before,
+    .divider::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        width: 80px;
+        height: 2px;
+        background: white;
+    }
+
+    .divider::before {
+        left: 0;
+    }
+
+    .divider::after {
+        right: 0;
+    }
+
+    .divider span {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 8px;
+        height: 8px;
+        background: white;
+        border-radius: 50%;
+        top: 6px;
+    }
+
+    .about {
+        padding: 40px 20px;
+        max-width: 700px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #ccc;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 14px 30px;
+        background-color: #ff0000;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 6px;
+        transition: 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #cc0000;
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
         h1 {
-            margin: 0;
             font-size: 40px;
         }
-
-        .about {
-            padding: 40px 20px;
-            max-width: 700px;
-            margin: auto;
-            font-size: 18px;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background-color: #ff0000;
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 6px;
-            transition: 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #cc0000;
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Roi Supperi's Website</h1>
+    <h1>Roi Supperi's<br>Website</h1>
+    <div class="divider">
+        <span></span>
+    </div>
 </header>
 
 <section class="about">
     <p>
-        Hi, I’m Roi Supperi. I’m 16 years old and currently working on building my own business. 
-        I’m passionate about learning new skills, creating projects, and growing step by step. 
-        This website is part of my journey — a place where I experiment, build, and improve.
-        I believe in starting early, staying consistent, and always pushing forward.
+        Hi, I’m Roi Supperi. I’m 16 years old and currently building my own business.
+        I’m focused on learning, improving, and creating real opportunities for myself.
+        This website represents my journey — experimenting, growing, and pushing forward every day.
+        I believe starting young gives me an advantage, and I’m just getting started.
     </p>
 
     <a class="button" href="https://www.youtube.com/@iorproductionss" target="_blank">
